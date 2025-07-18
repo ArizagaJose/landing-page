@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="José Arizaga is a Data Engineer specializing in building scalable data pipelines and cloud-based data solutions.">
+  <meta name="description"
+    content="José Arizaga is a Data Engineer specializing in building scalable data pipelines and cloud-based data solutions.">
   <meta name="keywords" content="Data Engineer, ETL, Data Pipelines, Cloud Solutions, Snowflake, Databricks, AWS">
   <meta name="author" content="José Arizaga">
-    <title>José Arizaga - Data Engineer</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="José Arizaga - Data Engineer">
+  <meta property="og:description"
+    content="Helping businesses transform complex data into clear insights and actionable intelligence.">
+  <meta property="og:url" content="https://arizagajose.dev">
+  
+  <title>José Arizaga - Data Engineer</title>
 
 </head>
+
 <body>
   <header>
     <h1>José Arizaga</h1>
@@ -18,10 +28,17 @@
 
   <section class="about">
     <h2>About Me</h2>
-    <p>Hi! I'm José, an experienced Data Engineer with a deep passion for building scalable data pipelines, robust ETL processes, and cloud-based data solutions. Certified in Snowflake, Databricks, and AWS, I specialize in architecting modern data infrastructures that drive business analytics and decision-making.</p>
-    <p>My expertise lies in helping organizations unlock the full potential of their data-clean, structured, and ready to deliver meaningful insights. Whether migrating legacy systems to modern cloud architectures, automating data workflows, or optimizing performance, my goal is always efficiency and quality.</p>
-    <p>Beyond my technical skills, I value clear communication, trust, practical problem-solving, and continuous learning.</p>
+    <p>Hi! I'm José, an experienced Data Engineer with a deep passion for building scalable data pipelines, robust ETL
+      processes, and cloud-based data solutions. Certified in Snowflake, Databricks, and AWS, I specialize in
+      architecting modern data infrastructures that drive business analytics and decision-making.</p>
+    <p>My expertise lies in helping organizations unlock the full potential of their data, clean, structured, and ready
+      to deliver meaningful insights. Whether migrating legacy systems to modern cloud architectures, automating data
+      workflows, or optimizing performance, my goal is always efficiency and quality.</p>
+    <p>Beyond my technical skills, I value clear communication, trust, practical problem-solving, and continuous
+      learning.</p>
+
   </section>
+
 
   <section class="skills">
     <h2>Key Skills</h2>
@@ -46,19 +63,26 @@
 
   <section class="projects">
     <h2>Projects</h2>
-    <p>(Coming soon - here I'll showcase detailed projects demonstrating my work with Databricks, Snowflake, Terraform, streaming data pipelines, and automated ETL workflows.)</p>
+    <p>(Coming soon - here I'll showcase detailed projects demonstrating my work with Databricks, Snowflake, Terraform,
+      streaming data pipelines, and automated ETL workflows.)</p>
   </section>
 
   <section class="contact">
     <h2>Contact</h2>
-    <p>Want to collaborate or have any questions? Feel free to reach out via email: 
-      <a href="mailto:me@arizagajose.dev">me@arizagajose.dev</a>
-      or via <a href="https://www.linkedin.com/in/arizagajose/">LinkedIn</a></p>
+    <p>Want to collaborate or have any questions? Feel free to reach out!</p>
+    <button class="button" onclick="window.location.href='mailto:me@arizagajose.dev'">Email Me</button>
   </section>
 
   <footer>
-    <p>&copy; 2025 José Arizaga. All rights reserved.</p>
-    <p>Follow me on <a href="https://www.linkedin.com/in/arizagajose/">LinkedIn</a> | <a href="https://github.com/arizagajose">GitHub</a></p>
+    <p>&copy; <span id="year"></span> José Arizaga. All rights reserved.</p>
+    <p>Follow me on <a href="https://www.linkedin.com/in/arizagajose/">LinkedIn</a> | <a
+        href="https://github.com/arizagajose">GitHub</a></p>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
 </body>
+
 </html>
