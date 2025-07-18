@@ -4,6 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <meta name="description"
     content="José Arizaga is a Data Engineer specializing in building scalable data pipelines and cloud-based data solutions.">
@@ -15,15 +23,29 @@
   <meta property="og:description"
     content="Helping businesses transform complex data into clear insights and actionable intelligence.">
   <meta property="og:url" content="https://arizagajose.dev">
+  <meta property="og:image" content="https://arizagajose.dev/assets/full-image.png">
+  <meta property="og:type" content="website">
+  <meta property="og:icon" content="https://arizagajose.dev/assets/favicon-32x32.png">
+  <meta property="og:site_name" content="José Arizaga - Data Engineer">
   
-  <title>José Arizaga - Data Engineer</title>
+  <title>José Arizaga - Data Engineer | Consulting & Mentoring</title>
 
 </head>
 
 <body>
   <header>
     <h1>José Arizaga</h1>
-    <p>Helping businesses transform complex data into clear insights and actionable intelligence.</p>
+    <p class="hero-subtitle">Transform your data into competitive advantage</p>
+    <p class="hero-description">Helping businesses build scalable data pipelines, optimize cloud architectures, and unlock actionable insights from complex data.</p>
+    <div class="hero-cta">
+      <button class="button primary" onclick="document.querySelector('.contact').scrollIntoView({behavior: 'smooth'})">Get Free Consultation</button>
+      <button class="button secondary" onclick="document.querySelector('.projects').scrollIntoView({behavior: 'smooth'})">View My Work</button>
+    </div>
+    <div class="credentials">
+      <span class="badge">SnowPro Certified</span>
+      <span class="badge">Databricks Professional</span>
+      <span class="badge">5+ Years Experience</span>
+    </div>
   </header>
 
   <section class="about">
@@ -40,6 +62,23 @@
 
   </section>
 
+  <section class="results">
+    <h2>Results I've Delivered</h2>
+    <div class="results-grid">
+      <div class="result-card">
+        <div class="result-number">90%</div>
+        <div class="result-text">Query Performance Improvement</div>
+      </div>
+      <div class="result-card">
+        <div class="result-number">60%</div>
+        <div class="result-text">Cost Reduction in Cloud Infrastructure</div>
+      </div>
+      <div class="result-card">
+        <div class="result-number">3x</div>
+        <div class="result-text">Faster Data Processing Pipelines</div>
+      </div>
+    </div>
+  </section>
 
   <section class="skills">
     <h2>Key Skills</h2>
@@ -64,14 +103,75 @@
 
   <section class="projects">
     <h2>Projects</h2>
-    <p>(Coming soon - here I'll showcase detailed projects demonstrating my work with Databricks, Snowflake, Terraform,
-      streaming data pipelines, and automated ETL workflows.)</p>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Near-Real-Time Analytics Pipeline</h3>
+        <p>Built with Apache Kafka and Spark Streaming</p>
+        <span class="coming-soon">Coming Soon</span>
+      </div>
+      <div class="project-card">
+        <h3>Data Pipeline with IA/LLM integration for insights extraction</h3>
+        <p>Leveraging AI for intelligent data processing</p>
+        <span class="coming-soon">Coming Soon</span>
+      </div>
+      <div class="project-card">
+        <h3>Lakehouse modernization with SCD</h3>
+        <p>Implementing Slowly Changing Dimensions in a Lakehouse architecture</p>
+        <span class="coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>How I Can Help You</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🏗️</div>
+        <h3>Data Architecture Consulting</h3>
+        <p>Design and implement scalable data architectures that grow with your business needs.</p>
+        <ul>
+          <li>Lakehouse modernization</li>
+          <li>Cloud migration strategy</li>
+          <li>Performance optimization</li>
+        </ul>
+        <!--- <div class="service-price">Starting at $150/hour</div> --->
+      </div>
+      <div class="service-card featured">
+        <div class="popular-badge">Most Popular</div>
+        <div class="service-icon">🎯</div>
+        <h3>1-on-1 Mentoring</h3>
+        <p>Accelerate your data engineering career with personalized guidance and hands-on projects.</p>
+        <ul>
+          <li>Career roadmap planning</li>
+          <li>Technical skill development</li>
+          <li>Interview preparation</li>
+        </ul>
+        <!--<div class="service-price">$100/hour</div> --->
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <h3>Part-time Projects</h3>
+        <p>Get expert help on specific data engineering challenges without long-term commitments.</p>
+        <ul>
+          <li>Pipeline development</li>
+          <li>Data quality audits</li>
+          <li>Performance troubleshooting</li>
+        </ul>
+        <!--<div class="service-price">Project-based pricing</div>--->
+      </div>
+    </div>
   </section>
 
   <section class="contact">
-    <h2>Contact</h2>
-    <p>Want to collaborate or have any questions? Feel free to reach out!</p>
-    <button class="button" onclick="window.location.href='mailto:me@arizagajose.dev'">Email Me</button>
+    <strong>Ready to Transform Your Data?</strong>
+    <p>Book a free 30-minute consultation to discuss your data challenges and how I can help solve them.</p>
+    <div class="contact-options">
+      <button class="button primary" onclick="window.location.href='mailto:me@arizagajose.dev?subject=Free Consultation Request'">Book Free Consultation</button>
+      <button class="button secondary" onclick="window.location.href='https://calendly.com/arizagajose'">Schedule a Call</button>
+    </div>
+    <div class="contact-guarantee">
+      <p>💡 <strong>Free consultation includes:</strong> Problem assessment, solution overview, and next steps recommendation</p>
+    </div>
   </section>
 
   <footer>
@@ -83,6 +183,20 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "José Arizaga",
+  "jobTitle": "Data Engineer",
+  "url": "https://arizagajose.dev",
+  "sameAs": [
+    "https://www.linkedin.com/in/arizagajose/",
+    "https://github.com/arizagajose"
+  ]
+}
+</script>
 
 </body>
 
