@@ -15,7 +15,8 @@
   <link rel="stylesheet" href="styles.css?v=1.0">
   <meta name="description"
     content="José Arizaga is a Data Engineer specializing in building scalable data pipelines and cloud-based data solutions.">
-  <meta name="keywords" content="Data Engineer, ETL, Data Pipelines, Cloud Solutions, Snowflake, Databricks, AWS">
+  <meta name="keywords" content="Data Engineer, ETL, Data Pipelines, Cloud Solutions, Snowflake, Databricks, AWS,
+  Real-time Data Engineering, Data Pipeline Optimization, AWS Data Solutions, Snowflake Migration, Databricks Consultant">
   <meta name="author" content="José Arizaga">
 
   <!-- Open Graph -->
@@ -27,135 +28,131 @@
   <meta property="og:type" content="website">
   <meta property="og:icon" content="https://arizagajose.dev/assets/favicon-32x32.png">
   <meta property="og:site_name" content="José Arizaga - Data Engineer">
-  
-  <title>José Arizaga - Data Engineer | Consulting & Mentoring</title>
+
+  <title data-i18n="title"></title>
 
 </head>
 
 <body>
   <header>
     <h1>José Arizaga</h1>
-    <p class="hero-subtitle">Transform your data into competitive advantage</p>
-    <p class="hero-description">Helping businesses build scalable data pipelines, optimize cloud architectures, and unlock actionable insights from complex data.</p>
+    <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
+    <p class="hero-description" data-i18n="hero.description"></p>
     <div class="hero-cta">
-      <button class="button primary" onclick="document.querySelector('.contact').scrollIntoView({behavior: 'smooth'})">Get Free Consultation</button>
-      <button class="button secondary" onclick="document.querySelector('.projects').scrollIntoView({behavior: 'smooth'})">View My Work</button>
+      <button class="button primary" data-i18n="button.consultation" onclick="document.querySelector('.contact').scrollIntoView({behavior: 'smooth'})"></button>
+      <button class="button secondary" data-i18n="button.viewwork" onclick="document.querySelector('.projects').scrollIntoView({behavior: 'smooth'})"></button>
     </div>
     <div class="credentials">
-      <span class="badge">SnowPro Certified</span>
-      <span class="badge">Databricks Professional</span>
-      <span class="badge">5+ Years Experience</span>
+      <span class="badge" data-i18n="badge.snowpro"></span>
+      <span class="badge" data-i18n="badge.databricks"></span>
+      <span class="badge" data-i18n="badge.experience"></span>
     </div>
   </header>
 
   <section class="about">
-    <h2>About Me</h2>
-    <p>Hi! I'm José, an experienced Data Engineer with a deep passion for building scalable data pipelines, robust ETL
-      processes, and cloud-based data solutions. Certified in Snowflake, Databricks, and AWS, I specialize in
-      architecting modern data infrastructures that drive business analytics and decision-making.</p>
-    <p>My expertise lies in helping organizations unlock the full potential of their data, clean, structured, and ready
-      to deliver meaningful insights. Whether migrating legacy systems to modern cloud architectures, automating data
-      workflows, or optimizing performance, my goal is always efficiency and quality.</p>
-    <p>I have experience working with US-based and LATAM customers across finance, retail, and healthcare industries.</p>
-    <p>Beyond my technical skills, I value clear communication, trust, practical problem-solving, and continuous
-      learning.</p>
+    <h2 data-i18n="about.title"></h2>
+    <p data-i18n="about.p1"></p>
+    <p data-i18n="about.p2"></p>
+    <p data-i18n="about.p3"></p>
+    <p data-i18n="about.p4"></p>
 
   </section>
 
   <section class="results">
-    <h2>Results I've Delivered</h2>
+    <h2 data-i18n="results.title"></h2>
     <div class="results-grid">
       <div class="result-card">
-        <div class="result-number">90%</div>
-        <div class="result-text">Query Performance Improvement</div>
+        <div class="result-number">60%</div>
+        <div class="result-text" data-i18n="results.performance"></div>
       </div>
       <div class="result-card">
-        <div class="result-number">60%</div>
-        <div class="result-text">Cost Reduction in Cloud Infrastructure</div>
+        <div class="result-number">40%</div>
+        <div class="result-text" data-i18n="results.cost"></div>
       </div>
       <div class="result-card">
         <div class="result-number">3x</div>
-        <div class="result-text">Faster Data Processing Pipelines</div>
+        <div class="result-text" data-i18n="results.processing"></div>
       </div>
     </div>
   </section>
 
   <section class="skills">
-    <h2>Key Skills</h2>
+    <h2 data-i18n="skills.title"></h2>
     <ul>
-      <li>Data Engineering & ETL (Snowflake, Databricks, Informatica PowerCenter)</li>
-      <li>Cloud Platforms (AWS, Azure)</li>
-      <li>Programming & Automation (Python, SQL, Terraform, Git)</li>
-      <li>Data Warehousing (Snowflake, Databricks Delta Lake)</li>
-      <li>Streaming & Real-time Data (Apache Spark Streaming, Kafka)</li>
-      <li>BI & Data Visualization (Sigma, Tableau, PowerBI)</li>
+      <li data-i18n="skills.etl"></li>
+      <li data-i18n="skills.cloud"></li>
+      <li data-i18n="skills.programming"></li>
+      <li data-i18n="skills.warehousing"></li>
+      <li data-i18n="skills.streaming"></li>
+      <li data-i18n="skills.bi"></li>
+      <li data-i18n="skills.iac"></li>
     </ul>
   </section>
 
   <section class="certifications">
-    <h2>Certifications</h2>
+    <h2 data-i18n="certifications.title"></h2>
     <ul>
-      <li>SnowPro Core Certification</li>
-      <li>Databricks Certified Data Engineer Professional</li>
-      <li>Azure Fundamentals</li>
+      <li data-i18n="cert.snowpro"></li>
+      <li data-i18n="cert.databricks"></li>
+      <li data-i18n="cert.azure"></li>
     </ul>
   </section>
 
   <section class="projects">
-    <h2>Projects</h2>
+    <h2 data-i18n="projects.title"></h2>
     <div class="project-grid">
       <div class="project-card">
-        <h3>Near-Real-Time Analytics Pipeline</h3>
-        <p>Built with Apache Kafka and Spark Streaming</p>
-        <span class="coming-soon">Coming Soon</span>
+        <h3 data-i18n="project1.title"></h3>
+        <p data-i18n="project1.desc"></p>
+        <span class="coming-soon" data-i18n="coming.soon"></span>
       </div>
       <div class="project-card">
-        <h3>Data Pipeline with IA/LLM integration for insights extraction</h3>
-        <p>Leveraging AI for intelligent data processing</p>
-        <span class="coming-soon">Coming Soon</span>
+        <h3 data-i18n="project2.title"></h3>
+        <p data-i18n="project2.desc"></p>
+        <span class="coming-soon" data-i18n="coming.soon"></span>
       </div>
       <div class="project-card">
-        <h3>Lakehouse modernization with SCD</h3>
-        <p>Implementing Slowly Changing Dimensions in a Lakehouse architecture</p>
-        <span class="coming-soon">Coming Soon</span>
+        <h3 data-i18n="project3.title"></h3>
+        <p data-i18n="project3.desc"></p>
+        <span class="coming-soon" data-i18n="coming.soon"></span>
       </div>
     </div>
   </section>
 
   <section class="services">
-    <h2>How I Can Help You</h2>
+    <h2 data-i18n="services.title"></h2>
     <div class="services-grid">
       <div class="service-card">
         <div class="service-icon">🏗️</div>
-        <h3>Data Architecture Consulting</h3>
-        <p>Design and implement scalable data architectures that grow with your business needs.</p>
+        <h3 data-i18n="service1.title"></h3>
+        <p data-i18n="service1.desc"></p>
         <ul>
-          <li>Lakehouse modernization</li>
-          <li>Cloud migration strategy</li>
-          <li>Performance optimization</li>
+          <li data-i18n="service1.feature1"></li>
+          <li data-i18n="service1.feature2"></li>
+          <li data-i18n="service1.feature3"></li>
         </ul>
         <!--- <div class="service-price">Starting at $150/hour</div> --->
       </div>
       <div class="service-card featured">
-        <div class="popular-badge">Most Popular</div>
+        <div class="popular-badge" data-i18n="popular.badge"></div>
         <div class="service-icon">🎯</div>
-        <h3>1-on-1 Mentoring</h3>
-        <p>Accelerate your data engineering career with personalized guidance and hands-on projects.</p>
+        <h3 data-i18n="service2.title"></h3>
+        <p data-i18n="service2.desc"></p>
         <ul>
-          <li>Career roadmap planning</li>
-          <li>Technical skill development</li>
-          <li>Interview preparation</li>
+          <li data-i18n="service2.feature1"></li>
+          <li data-i18n="service2.feature2"></li>
+          <li data-i18n="service2.feature3"></li>
         </ul>
         <!--<div class="service-price">$100/hour</div> --->
       </div>
       <div class="service-card">
         <div class="service-icon">⚡</div>
-        <h3>Part-time Projects</h3>
-        <p>Get expert help on specific data engineering challenges without long-term commitments.</p>
+        <h3 data-i18n="service3.title"></h3>
+        <p data-i18n="service3.desc"></p>
         <ul>
-          <li>Pipeline development</li>
-          <li>Data quality audits</li>
-          <li>Performance troubleshooting</li>
+          <li data-i18n="service3.feature1"></li>
+          <li data-i18n="service3.feature2"></li>
+          <li data-i18n="service3.feature3"></li>
         </ul>
         <!--<div class="service-price">Project-based pricing</div>--->
       </div>
@@ -163,23 +160,23 @@
   </section>
 
   <section class="contact">
-    <strong>Ready to Transform Your Data?</strong>
-    <p>Book a free 30-minute consultation to discuss your data challenges and how I can help solve them.</p>
+    <strong data-i18n="contact.title"></strong>
+    <p data-i18n="contact.description"></p>
     <div class="contact-options">
-      <button class="button primary" onclick="window.location.href='mailto:me@arizagajose.dev?subject=Free Consultation Request'">Book Free Consultation</button>
-      <button class="button secondary" onclick="window.location.href='https://calendly.com/arizagajose'">Schedule a Call</button>
+      <button class="button primary" data-i18n="button.bookconsultation" onclick="window.location.href='mailto:me@arizagajose.dev?subject=Free Consultation Request'"></button>
     </div>
     <div class="contact-guarantee">
-      <p>💡 <strong>Free consultation includes:</strong> Problem assessment, solution overview, and next steps recommendation</p>
+      <p>💡 <strong data-i18n="contact.guarantee"></strong> <span data-i18n="contact.guarantee.desc"></span></p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; <span id="year"></span> José Arizaga. All rights reserved.</p>
-    <p>Follow me on <a href="https://www.linkedin.com/in/arizagajose/">LinkedIn</a> | <a
+    <p>&copy; <span id="year"></span> José Arizaga. <span data-i18n="footer.rights"></span></p>
+    <p><span data-i18n="footer.follow"></span> <a href="https://www.linkedin.com/in/arizagajose/">LinkedIn</a> | <a
         href="https://github.com/arizagajose">GitHub</a></p>
   </footer>
 
+  <script src="scripts.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
